@@ -4,7 +4,6 @@ var path = require('path');
 var fs = require("fs");
 var bodyParser = require('body-parser')
 app.use(bodyParser.json())
-var raw_input = require('readline-sync').question
 
 app.get('/get',function(req,res){
     res.sendFile(path.join(__dirname+'/characters.html'));
@@ -22,9 +21,6 @@ app.post("/post",function(req,res){
 
     }
 })
-
-
-
 app.listen(3000, () => console.log('server is listening 3000....'));
 
 
@@ -37,7 +33,7 @@ app.listen(3000, () => console.log('server is listening 3000....'));
 
 
 
-
+// var raw_input = require('readline-sync').question
 // function alternatingCharacters(s){
 //     let result = 0;
 //     let arr = s.split("");
