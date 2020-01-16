@@ -1,3 +1,4 @@
+var raw_input = require('readline-sync').question
 function alternatingCharacters(s){
     let result = 0;
     let arr = s.split("");
@@ -9,5 +10,6 @@ function alternatingCharacters(s){
     console.log(result)
     return result;
 }
-alternatingCharacters("ABABAB")
+var str = raw_input("enter characters")
+alternatingCharacters(str)
 
